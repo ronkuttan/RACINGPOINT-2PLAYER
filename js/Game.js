@@ -121,7 +121,7 @@ class Game {
     ob14.debug = false;
     ob14.setCollider("rectangle",0,0,160,190)
 
-    moveUp = createSprite(1400,700,10,10)
+    moveUp = createSprite(400,700,10,10)
     moveUp.addImage("up",moveUp_img)
     moveUp.scale = 0.15
     moveLeft = createSprite(1355,700,10,10)
@@ -193,7 +193,7 @@ class Game {
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y-100;
-            moveUp.x = camera.x+10;
+         
            moveUp.y = camera.y+190
           moveLeft.y = camera.y+243
           moveRight.y = camera.y+243;
