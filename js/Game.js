@@ -194,7 +194,7 @@ class Game {
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y-100;
          
-           moveUp.y = camera.y+190
+           moveUp.y = camera.y+100
           moveLeft.y = camera.y+243
           moveRight.y = camera.y+243;
          /* bulletUp.x = cars[index-1].x;
