@@ -192,7 +192,7 @@ class Game {
           ellipse(x,y,60,60);
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
-          camera.position.y = cars[index-1].y;
+          camera.position.y = cars[index-1].y+100;
            moveUp.y = camera.y+190
           moveLeft.y = camera.y+243
           moveRight.y = camera.y+243;
@@ -464,7 +464,7 @@ class Game {
     textSize(50);
     for(var plr in allPlayers){
         if(allPlayers[plr].rank === 1){
-            text("1st: " + allPlayers[plr].name.toUpperCase(), 0, 85);
+            text("1st: " + allPlayers[plr].name.toUpperCase(), displayWidth/2, displayHeight/9);
         }else if(allPlayers[plr].rank === 2){
             text("2nd: " + allPlayers[plr].name.toUpperCase(), displayWidth/4, displayHeight/9 + 73);
         }else{
