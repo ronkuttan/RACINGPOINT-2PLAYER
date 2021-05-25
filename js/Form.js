@@ -69,7 +69,7 @@ class Form {
     this.reset.style('height', '30px');
     this.reset.style('background', 'lightpink');
 
-    this.instruction.position(windowWidth-1500,windowHeight/4-150);
+    this.instruction.position(windowWidth-1400,windowHeight/4-150);
     this.instruction.style('width', '150px');
     this.instruction.style('height', '30px');
     this.instruction.style('background', 'white');
