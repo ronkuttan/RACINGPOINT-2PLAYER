@@ -193,6 +193,7 @@ class Game {
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y-100;
+            moveUp.x = camera.x+10;
            moveUp.y = camera.y+190
           moveLeft.y = camera.y+243
           moveRight.y = camera.y+243;
