@@ -317,6 +317,18 @@ class Game {
         xVel -= 8
         hitSound.play();
       }  
+      if( cars[index - 1].isTouching(car1)){
+        console.log("end")
+        cars[index - 1].bounceOff(car1);
+        xVel -= 8
+        
+      }  
+      if( cars[index - 1].isTouching(car2)){
+        console.log("end")
+        cars[index - 1].bounceOff(car2);
+        xVel -= 8
+        
+      } 
       
        
         
@@ -325,7 +337,7 @@ class Game {
         } 
        
         textSize(15);
-        text(allPlayers[plr].name, cars[index - 1].x-40, cars[index - 1].y + 75);
+        text(allPlayers[plr].name, cars[index - 1].x, cars[index - 1].y + 75);
       }
 
     }
@@ -335,7 +347,7 @@ class Game {
    
 
     if(player.distance < 32200){
-      if(keyIsDown(38) && player.index !== null ){
+      if(keyIsDown(38) && player.index !== null  ||  mousePressedOver(moveUp)&& player.index !== null){
           yVel += 0.95;
          
           if(keyIsDown(37) || mousePressedOver(moveLeft)){
