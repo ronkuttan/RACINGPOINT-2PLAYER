@@ -192,7 +192,7 @@ class Game {
           ellipse(x,y,60,60);
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
-          camera.position.y = cars[index-1].y+100;
+          camera.position.y = cars[index-1].y-100;
            moveUp.y = camera.y+190
           moveLeft.y = camera.y+243
           moveRight.y = camera.y+243;
@@ -320,14 +320,13 @@ class Game {
       if( cars[index - 1].isTouching(car1)){
         console.log("end")
         cars[index - 1].bounceOff(car1);
-        xVel -= 8
+       
         
       }  
       if( cars[index - 1].isTouching(car2)){
         console.log("end")
         cars[index - 1].bounceOff(car2);
-        xVel -= 8
-        
+       
       } 
       
        
